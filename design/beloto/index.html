@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Beloto</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/slider.js"></script>
+
+</head>
+
+<body>
+
+
+  <header>
+
+    <section class="logo">
+      <div>
+        <p><a href="index.html">Beloto</a></p>
+        <p>Low Cost Personen Vervoer</p>
+      </div>
+    </section>
+
+    <nav class="mainnav">
+      <ul>
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#services">Diensten</a></li>
+        <li><a href="#fleet">Wagens</a></li>
+        <li><a href="index.html">City Tours</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+		</nav>
+
+  </header>
+
+  <main>
+		
+		 <section id="home" class="home">
+      <div>
+        <h1>Het Beste Vervoer</h1>
+        <h2>Voor Uw Portmonee<br>Wereldwijd</h2>
+        <p class="hittheroad"><a href="#services">Hit The Road</a></p>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="wrap">
+        <h1>Onze Diensten</h1>
+        <div>
+          <div class="airport cf">
+            <h2>Luchthaven Vervoer</h2>
+            <p>Wij zijn actief in de grote luchthavens in Frankrijk, België, Nederland, Luxemburg en Duitsland.</p>
+            <a class="moreinfo" href="#">More Info</a>
+          </div>
+          <div class="tour cf">
+            <h2>City Tours</h2>
+            <p>Met Beloto ziet u de wereld van een ander standpunt. U kan zitten en ontspannen terwijl uw ervaren chauffeur u van een onvergetelijke tour voorziet.</p>
+            <a class="moreinfo" href="#">Meer Info</a>
+          </div>
+          <div class="chauffeurs cf">
+            <h2>Onze Chauffeurs</h2>
+            <p>Onze chauffeurs zijn minutieus gekozen om uw wensen te voldoen. Wij zorgen ervoor dat onze chauffeurs uw taal spreken en allemaal een goede kennis hebben van de omgevingen en bezienswaardigheden.</p>
+            <a class="moreinfo" href="#">Meer Info</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fleet" class="fleet">
+      <div class="wrap">
+        <h1>Onze Wagens</h1>
+        <p>Wij verzekeren u comfort en veiligheid.<br><br>Deze voertuigen zijn ook uitgerust met climate control,<br>en andere belangrijke confort items.<br><br>Op aanvraag kunnen wij u zelfs draadloos internet aanbieden!</p>
+        <div class="slider">
+          <ul>
+            <li>
+              <h2>Berline</h2>
+              <img src="img/slider/Passat.png" />
+              <p>Volkswagen Passat<br>Tot 3 passagiers</p>
+            </li>
+            <li>
+              <h2>Mini Bus</h2>
+              <img src="img/slider/caravelle.png" />
+              <p>Volkswagen Transporter<br>3 tot 8 passagiers</p>
+            </li>
+            <li>
+              <h2>Bus</h2>
+              <img src="img/slider/sprinter.png" />
+              <p>Mercedes Sprinter<br>9 tot 18 passagiers</p>
+            </li>
+          </ul>
+        </div>
+        <script>
+          var sliders = []
+          $('.slider').each(function () {
+            sliders.push(new Slider(this))
+          })
+        </script>
+        <div class="slider-controls">
+          <ul>
+            <li><a href="javascript:sliders[0].goToPrev()"><img src="img/slider/arrows2.png"></a></li>
+            <li><a href="javascript:sliders[0].goToNext()"><img src="img/slider/arrows.png"></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

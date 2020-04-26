@@ -1,0 +1,365 @@
+@font-face {
+  font-family: myriadProBoldCond;
+  src: url(../fonts/MyriadPro-BoldCond.otf);
+}
+
+@font-face {
+  font-family: myriadProCond;
+  src: url(../fonts/MyriadPro-Cond.otf);
+}
+
+@font-face {
+  font-family: myriadPro;
+  src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: myriadPro;
+}
+
+
+/**************** HEADER ***************/
+
+header {
+  height: 100vh;
+  background-image: url(../img/home.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+
+/* LOGO */
+
+.logo {
+  background-color: #252525;
+  height: 150px;
+}
+
+.logo div {
+  width: 300px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.logo div p:first-child {
+  width: 100%;
+  height: 90px;
+  background-image: url(../img/BelotoLogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+}
+
+.logo div p:first-child a {
+  color: rgba(1, 1, 1, 0);
+}
+
+.logo div p:nth-child(2) {
+  margin: 0;
+  color: #484848;
+  font-size: 2.2em;
+  text-align: center;
+  font-family: myriadProBoldCond;
+}
+
+
+/* MAIN NAV */
+
+nav {
+  width: 100%;
+  padding: 15px 0 5px 0;
+  background: rgba(37, 37, 37, 0.5);
+  position: absolute;
+  font-family: myriadProBoldCond;
+  transition: background 1s ease;
+}
+
+nav ul {
+  width: 60%;
+  margin: auto;
+}
+
+nav ul li {
+  float: left;
+  margin: 0 0.5% 0.5% 0;
+  width: 19%;
+  text-align: center;
+  list-style: none;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #dce0e1;
+  font-size: 2.2em;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+nav ul li a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+  background: #dce0e1;
+}
+
+nav ul .active a:after {
+  width: 100%;
+  background: #dce0e1;
+}
+
+.fixednav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background: rgba(37, 37, 37, 0.8);
+}
+
+
+/**************** HOME ***************/
+
+.home {
+	margin: auto;
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+}
+
+h1 {
+  font-size: 6em;
+  text-align: center;
+  color: #FFF;
+  font-family: myriadProBoldCond;
+}
+
+.blackheader {
+  color: #000;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  font-family: myriadProBoldCond;
+  color: #FFF;
+}
+
+.hittheroad {
+  margin: 150px auto 0;
+  text-align: center;
+}
+
+.hittheroad a {
+  color: #FFF;
+  background: #000;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 3em;
+  transition: .3s ease;
+}
+
+.hittheroad a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+/**************** OUR SERVICE ***************/
+
+.services {
+  background-image: url(../img/airport.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.services .wrap {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-bottom: 100px;
+}
+
+.services .wrap div {
+  display: table;
+}
+
+.services h1 {
+  padding-top: 10vh;
+  color: #000;
+}
+
+.services h2 {
+  color: #000;
+}
+
+.services .wrap div div {
+  width: 22.333%;
+  padding: 0 5%;
+  border-right: 1px rgba(0, 0, 0, 0.3) solid;
+  display: table-cell;
+}
+
+.services .wrap .tour {
+  border: 0;
+}
+
+.services .wrap .chauffeurs {
+  border-right: 0;
+  border-left: 1px rgba(0, 0, 0, 0.3) solid;
+}
+
+.services .wrap div p {
+  font-size: 1.5em;
+}
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.moreinfo {
+  float: right;
+  color: #FFF;
+  background: rgba(0, 0, 0, 1);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+.moreinfo:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.scrolltofleet {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30vh;
+}
+
+.scrolltofleet a {
+  color: #FFF;
+  background: #000;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 3em;
+  transition: .3s ease;
+}
+
+.scrolltofleet a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+/**************** OUR FLEET ***************/
+
+.fleet {
+  background-image: url(../img/fleet.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.fleet .wrap {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.fleet h1 {
+  padding-top: 10vh;
+  color: #000;
+}
+
+.fleet p {
+  font-size: 2em;
+  text-align: center;
+}
+
+.slider {
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+  /* for overflow: hidden to work in IE7 */
+}
+
+.slider > ul {
+  /* styled by JS to match the added width and height of all <li>’s */
+  position: relative;
+  -webkit-transition: .5s left;
+  -moz-transition: .5s left;
+  -ms-transition: .5s left;
+  -o-transition: .5s left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider > ul > li {
+  float: left;
+  width: 400px;
+  height: 600px;
+}
+
+.slider ul li h2 {
+  color: #000;
+}
+
+.slider ul li img {
+  width: 400px;
+  height: 300px;
+}
+
+.slider ul li p {
+  text-align: center;
+  font-size: 2em;
+}
+
+.slider-controls ul li {
+  list-style: none;
+  margin-top: -400px;
+}
+
+.slider-controls ul li:first-child {
+  float: left;
+}
+
+.slider-controls ul li:last-child {
+  float: right;
+  padding-right: 40px;
+}
+
+.slider-controls ul li a img {
+  width: 50px;
+}
+
+
+/**************** FOOTER ***************/
