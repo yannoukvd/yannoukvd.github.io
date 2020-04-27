@@ -43,10 +43,10 @@ header > .headWrap {
 header > .headWrap > .logo {
 	background-image: url(../img/logo/yannouk-logo_black.png);
 	background-repeat: no-repeat;
-	background-size: 100px;
+	background-size: 70px;
 	float: left;
 	height: 100px;
-	margin: 5px 0 0 0;
+	margin: 10px 0 0 0;
 	width: 100px;
 }
 
