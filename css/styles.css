@@ -26,6 +26,10 @@ p {
 	font-weight: 600;
 }
 
+a {
+	color: #000;
+}
+
 
 /*----------------
 ***** HEADER *****
@@ -401,6 +405,7 @@ main {
 	float: left;
 	margin: 1%;
 	width: 31.33%;
+	box-shadow: 0 10px 20px -4px rgba(0,0,0,.5);
 }
 
 .post-article {
