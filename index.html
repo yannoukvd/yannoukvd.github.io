@@ -2,12 +2,66 @@
 <html>
 
 <!-- Head template -->
-<?php include "template/head.php"; ?>
+<head>
+    
+    <!--- Meta Data --->
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    
+    <!--- Title --->
+  <title>Home | Yannouk</title>
+    
+    <!--- Stylesheets --->
+  <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
+    
+</head>
 
   <body>
 
-		<!-- Header template -->
-    <?php include "template/header.php"; ?>
+	<!-- Header template -->
+    <header>
+      <div class="headWrap">
+            
+            <!--- Logo --->
+        <div class="logo">
+          <a href="/"><span>yannouk.com</span></a>
+        </div>
+            
+            <!--- Main Navigation --->
+        <nav class="mainNav">
+          <ul>
+            <li><a href="/">Home</a></li>
+                    <li><a href="/photo.php">Photo</a></li>
+            <li><a href="/video.php">Video</a></li>
+            <li><a href="/design.php">Design</a></li>
+            <li><a href="/music.php">Music</a></li>
+            <li><a href="/contact.php">Contact</a></li>
+          </ul>
+        </nav>
+            
+            <!--- Mobile Nav Button --->
+        <div class="m-mainNav-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+            
+            <!--- Mobile Navigation --->
+        <nav class="m-mainNav">
+          <ul>
+            <li><a href="/">Home</a></li>
+                    <li><a href="/photo.php">Photo</a></li>
+            <li><a href="/video.php">Video</a></li>
+                    <li><a href="/design.php">Design</a></li>
+            <li><a href="/music.php">Music</a></li>
+            <li><a href="/contact.php">Contact</a></li>
+          </ul>
+        </nav>
+            
+      </div>
+    </header>
 
 		<!-- Main --->
       <main>
@@ -19,33 +73,31 @@
 				
 				<!-- Articles -->
         <section class="content cf">
-        <?php
-                include "content/article-welcome.php";
-        ?>
-
-				<?php
-                include "content/photo-doel.php";
-                include "content/photo-newyork.php";
-                include "content/photo-instagram.php";
-        ?>
-
-				<?php
-                include "content/design-poster.php";
-                include "content/design-peoplepartners.php";
-                include "content/design-barto.php";
-        ?>
-
-				<?php
-                include "content/video-skating.php";
-                include "content/video-newyork.php";
-                include "content/video-wcdcrevette.php";
-        ?>
+        Content
         </section>
 				
       </main>
       
 		<!-- Footer template -->
-    <?php include "template/footer.php"; ?>
+        <footer>
+            <div class="footWrap">
+                
+                <!-- Copyright -->
+                <div class="copyright">
+                    <p>&copy; <a href="contact.php">yannouk.com</a>, 2020. All rights reserved.</p>
+                </div>
+                
+                <!-- Web Design -->
+                <div class="webdesign">
+                    <a href="http://yannouk.com" title="Web Design: yannouk.com">Web Design: yannouk.com</a>
+                </div>
+                
+            </div>
+        </footer>
+
+<!--- Scripts --->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/main.js"></script>
       
   </body>
 
