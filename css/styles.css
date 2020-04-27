@@ -20,6 +20,12 @@ h2 {
 	margin: 0;
 }
 
+p {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-weight: 600;
+}
+
 
 /*----------------
 ***** HEADER *****
@@ -111,14 +117,12 @@ header > .headWrap > .mainNav > ul > li > a {
 
 header > .headWrap > .mainNav > ul > li > a,
 header > .headWrap > .langNav > ul > li > a {
-	color: #000;
-	position: relative;
-	text-align: center;
-	text-decoration: none;
-	transition: all 2s;
-	-o-transition: all 2s;
-	-moz-transition: all 2s;
-	-webkit-transition: all 2s;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 header > .headWrap > .mainNav > ul > li > a:after,
