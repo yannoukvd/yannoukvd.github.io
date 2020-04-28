@@ -147,6 +147,30 @@ $(document).ready(function () {
 		});
 	}
 
+	$(".work-grid-image").each(function () {
+		$(this).click(function () {
+			console.log("test");
+			//var src = $(this).attr("background-image").replace(/^url|[\(\'\")]/g, ''),
+				//alt = src.split("/").pop();
+			var src = $(this).attr("src");
+			$(this).parent().parent().next().fadeIn(200);
+			$(this).parent().parent().next().children().children().children().children().attr("src", src);
+			//$(this).parent().next().children().children().children().children().attr("alt", alt);
+		});
+	});
+
+	$(".work-image").each(function () {
+		$(this).click(function () {
+			console.log("test");
+			//var src = $(this).attr("background-image").replace(/^url|[\(\'\")]/g, ''),
+				//alt = src.split("/").pop();
+			var src = $(this).attr("src");
+			$(this).parent().next().next().fadeIn(200);
+			$(this).parent().parent().next().children().children().children().children().attr("src", src);
+			//$(this).parent().next().children().children().children().children().attr("alt", alt);
+		});
+	});
+
 
 	/* Fullscreen View Photo */
 	$(".fullscreen").hide();

@@ -5,15 +5,19 @@
 <head>
     
     <!--- Meta Data --->
-  <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     
     <!--- Title --->
-  <title>Home | Yannouk</title>
+    <title>Home | Yannouk</title>
     
     <!--- Stylesheets --->
-  <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
+
+    <!--- Scripts --->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/main.js"></script>
     
 </head>
 
@@ -61,54 +65,67 @@
       </div>
     </header>
 
-		<!-- Main --->
+	   <!-- Main --->
       <main>
 
-        <container class="post-container-fullwidth">
-            <article class="post-article">
-                <center>
-                    <p>
-                        Graphic Design / Web Design / Photography<br>
-                        Videography / Visual Identity / Social Media<br>
-                        is what I'm best at.<br><br>
-                        I'm also a festival addict with a passion for music and traveling.
-                    </p>
-                </center>
-            </article>
-        </container>
-
-        <p><b>Latest work<b></p>
+        <div class="intro-text">
+            <p>
+                Graphic Design / Web Design / Photography<br>
+                Videography / Visual Identity / Social Media<br>
+                is what I'm best at.<br><br>
+                I'm also a festival addict with a passion for music and traveling.
+            </p>
+        </div>
 				
 		<!-- Articles -->
         <section class="content cf">
+            <!--- Design Post --->
+<container class="post-container">
+    <article class="post-article">
+
+        <!--- Title --->
+        <h2 class="post-title"><a href="work/peoplepartners.html"><span>Web Design</span><br>People Partners</a></h2>
+
+        <!-- Post Content -->
+        <div class="post-wrapper">
+
+            <!-- Design Cover -->
+            <div class="post-cover">
+                <div class="cover design-cover" style="background-image: url('img/design/website/peoplepartners.jpg');">
+                </div>
+            </div>
+
+        </div>
+
+    </article>
+</container>
             <!--- Photo Post --->
-            <container class="post-container">
-                <article class="post-article">
+<container class="post-container">
+	<article class="post-article">
 
-                    <!--- Title --->
-                    <h2 class="post-title"><a href="http://instagram.com/yannoukvd"><span>Photography</span><br>Instagram</a></h2>
+		<!--- Title --->
+		<h2 class="post-title"><a href="http://instagram.com/yannoukvd"><span>Photography</span><br>Instagram</a></h2>
 
-                    <!--- Information --->
-                    <span class="post-info">Posted on 25/03/2017</span>
+		<div class="images">
 
-                    <div class="images">
+			<!-- SnapWidget -->
+			<script src="https://snapwidget.com/js/snapwidget.js"></script>
+			<iframe src="https://snapwidget.com/embed/356963" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
 
-                        <!-- SnapWidget -->
-                        <script src="https://snapwidget.com/js/snapwidget.js"></script>
-                        <iframe src="https://snapwidget.com/embed/356963" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+		</div>
 
-                    </div>
+		<script>
+			$(".thumbnail-wrapper").click(function() {
+				var instalink = $(this).child().attr("data-link");
+				window.location = instalink;
+			});
 
-                    <script>
-                        $(".thumbnail-wrapper").click(function() {
-                            var instalink = $(this).child().attr("data-link");
-                            window.location = instalink;
-                        });
+		</script>
 
-                    </script>
+	</article>
+</container>
 
-                </article>
-            </container>
+            
         </section>
 				
       </main>
@@ -129,10 +146,6 @@
                 
             </div>
         </footer>
-
-<!--- Scripts --->
-<script src="js/jquery-1.10.2.js"></script>
-<script src="js/main.js"></script>
       
   </body>
 

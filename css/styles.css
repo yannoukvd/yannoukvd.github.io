@@ -103,7 +103,7 @@ header > .headWrap > .mainNav > ul {
 	margin: 0 auto;
 	margin-top: 37px;
 	padding: 0;
-	width: 511px;
+	width: 401px;
 }
 
 header > .headWrap > .mainNav > ul > li {
@@ -220,7 +220,7 @@ header > .headWrap > .mainNav > ul > li > .active:after {
 }
 
 .m-mainNav-btn span {
-	background: #fff;
+	background: #000;
 	cursor: pointer;
 	display: block;
 	height: 2px;
@@ -376,6 +376,11 @@ main {
 	margin-top: 30px;
 	padding: 100px 0;
 	text-align: center;
+}
+
+.intro-text {
+	text-align: center;
+	margin-bottom: 50px;
 }
 
 
@@ -641,6 +646,10 @@ main {
 	opacity: 0.8;
 }
 
+
+
+/*--- FULLSCREEN ---*/
+
 .fullscreen {
 	background: #000;
 	background: rgba(0, 0, 0, 0.7);
@@ -658,7 +667,7 @@ main {
 
 .fullscreen > div {
 	display: table;
-	padding-top: 160px;
+	padding-top: 50px;
 	position: absolute;
 	width: 100%;
 }
@@ -680,6 +689,60 @@ main {
 
 .fullscreen > div > div > div img {
 	width: 100%;
+}
+
+
+/*--- WORK ---*/
+
+.work-image img {
+	width: 100%;
+}
+
+.work-grid {
+}
+
+.work-grid .col {
+	float: left;
+}
+
+.work-grid .col:nth-child(1) {
+	margin-left: 0;
+	width: 32.66%;
+}
+
+.work-grid .col-min:nth-child(1) {
+	width: 100%;
+}
+
+.work-grid .col:nth-child(2) {
+	margin: 0 1%;
+	width: 32.66%;
+}
+
+.work-grid .col:nth-child(3) {
+	margin-right: 0;
+	width: 32.66%;
+}
+
+.work-grid .work-grid-image {
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+.work-grid .work-grid-image {
+	width: 100%;
+}
+
+.work-grid .work-grid-image {
+	margin-bottom: 3%;
+}
+
+.work-grid .work-grid-image:hover {
+	background-size: 170%;
+	cursor: pointer;
+	opacity: 0.8;
 }
 
 

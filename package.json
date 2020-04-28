@@ -1,0 +1,26 @@
+{
+  "name": "yannoukvd.github.io",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.js",
+  "scripts": {
+    "test": "hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yannoukvd/yannoukvd.github.io.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Yannouk Van Dyck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yannoukvd/yannoukvd.github.io/issues"
+  },
+  "homepage": "https://github.com/yannoukvd/yannoukvd.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.2.2"
+  }
+}
