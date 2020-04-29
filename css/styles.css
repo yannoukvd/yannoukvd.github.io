@@ -745,14 +745,36 @@ main {
 	opacity: 0.8;
 }
 
+.work-grid .col-50:nth-child(1) {
+	margin-left: 0;
+	width: 50%;
+}
+
+.work-grid .col-50:nth-child(2) {
+	margin-right: 0;
+	width: 50%;
+}
+
+.work-grid-iframe {
+	width: 100%;
+	height: 300px;
+}
+
+
+/*-----------------
+***** MUSIC *****
+-----------------*/
+
+.music-iframe {
+	width: 100%;
+	height: 800px;
+}
 
 /*-----------------
 ***** CONTACT *****
 -----------------*/
 
-.footer a {
-	color: #808080;
-}
+
 
 
 /*----------------
@@ -760,7 +782,6 @@ main {
 ----------------*/
 
 footer {
-	border-top: 1px solid #000;
 	margin: 1%;
 }
 
