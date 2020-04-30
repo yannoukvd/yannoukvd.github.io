@@ -1,4 +1,4 @@
-<!-- Video Post -->
+<!-- Photo Post -->
 <container class="post-container">
 	<article class="post-article">
 
@@ -14,31 +14,6 @@
 			</div>
 		</div>
 
-		<!-- Images -->
-<!--
-		<div class="images">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel20.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel16.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel15.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel18.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel3.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel10.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel11.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel12.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel2.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel6.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel5.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel4.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel13.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel7.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel17.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel19.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel8.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel9.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel1.jpg">
-			<img class="grid-image" src="img/photo/doel/thumbnails/doel14.jpg">
-		</div>
--->
 		<div class="grid cf">
 			<div class="col col-min">
 				<img class="grid-image" src="img/photo/doel/doel20.jpg">
