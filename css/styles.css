@@ -677,6 +677,7 @@ main {
 .fullscreen > div > div > div {
 	margin: auto;
 	width: 70%;
+	height: 500px;
 }
 
 .fullscreen > div > div > div iframe {
