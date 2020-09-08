@@ -794,9 +794,9 @@ footer {
 footer > .footWrap {
 	font-size: 0.9em;
 	height: 70px;
-	margin: 0 1% 0 1%;
-	position: absolute;
-	width: 98%;
+	/*margin: 0 1% 0 1%;*/
+	/*position: absolute;*/
+	width: 100%;
 }
 
 footer > .footWrap > div {
