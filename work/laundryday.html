@@ -14,6 +14,7 @@
 	<!--- Stylesheets --->
   <link rel="stylesheet" href="../css/styles.css">
 	<link rel="stylesheet" href="../font/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
 	
 </head>
 
@@ -81,18 +82,18 @@
           <div class="work-image">
             <img src="../img/work/laundryday/laundryday.png" alt="Laundry Day">
           </div>
-          <div class="work-image">
-            <iframe class="work-grid-iframe-big" width="560" height="315" src="https://www.youtube.com/embed/DoaRZcGtzi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="work-grid-iframe-banner">
+            <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="DoaRZcGtzi4"></div>
           </div>
-          <div class="work-image">
-            <iframe class="work-grid-iframe-big" width="560" height="315" src="https://www.youtube.com/embed/V_E7F_zOXio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="work-grid-iframe-banner">
+            <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="V_E7F_zOXio"></div>
           </div>
 
           <!-- <div class="fullscreen">
             <div>
               <div>
                 <div>
-                  <img src='../img/work/peoplepartners/pp-mockup2.jpg' alt="People Partners">
+                  <img src='' alt="Laundry Day">
                 </div>
               </div>
             </div>
@@ -117,6 +118,11 @@
 <!--- Scripts --->
 <script src="../js/jquery-1.10.2.js"></script>
 <script src="../js/main.js"></script>
+<script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+<script src="../js/plyr.js" crossorigin="anonymous"></script>
+<script>
+  const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
+</script>
       
   </body>
 
