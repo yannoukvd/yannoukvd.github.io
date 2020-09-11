@@ -14,6 +14,7 @@
 	<!--- Stylesheets --->
   <link rel="stylesheet" href="../css/styles.css">
 	<link rel="stylesheet" href="../font/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
 	
 </head>
 
@@ -142,16 +143,32 @@
 
           <div class="work-grid cf">
             <div class="col-50">
-              <iframe class="work-grid-iframe" src="https://www.youtube.com/embed/kUm9_TJEuPA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <iframe class="work-grid-iframe" src="https://www.youtube.com/embed/ycigMrtouZA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <iframe class="work-grid-iframe" src="https://www.youtube.com/embed/Ym5i0f3jaZk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <iframe class="work-grid-iframe" src="https://www.youtube.com/embed/r9seHrvnv7E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="work-grid-iframe">
+                <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="kUm9_TJEuPA"></div>
+              </div>
+              <div class="work-grid-iframe">
+                <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="ycigMrtouZA"></div>
+              </div>
+              <div class="work-grid-iframe">
+                <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="Ym5i0f3jaZk"></div>
+              </div>
+              <div class="work-grid-iframe">
+                <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="r9seHrvnv7E"></div>
+              </div>
             </div>
             <div class="col-50">
-              <iframe class="work-grid-iframe" src="https://www.youtube.com/embed/r8C45ZZmR8A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <iframe class="work-grid-iframe" src="https://www.youtube.com/embed/jYh7G7OQgSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <iframe class="work-grid-iframe" src="https://www.youtube.com/embed/f0sOgOfGriQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <iframe class="work-grid-iframe" src="https://www.youtube.com/embed/CkR4_ewvX9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="work-grid-iframe">
+                <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="r8C45ZZmR8A"></div>
+              </div>
+              <div class="work-grid-iframe">
+                <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="jYh7G7OQgSk"></div>
+              </div>
+              <div class="work-grid-iframe">
+                <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="f0sOgOfGriQ"></div>
+              </div>
+              <div class="work-grid-iframe">
+                <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="CkR4_ewvX9M"></div>
+              </div>
             </div>
           </div>
 
@@ -206,6 +223,11 @@
 <!--- Scripts --->
 <script src="../js/jquery-1.10.2.js"></script>
 <script src="../js/main.js"></script>
+<script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+<script src="../js/plyr.js" crossorigin="anonymous"></script>
+<script>
+  const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
+</script>
       
   </body>
 

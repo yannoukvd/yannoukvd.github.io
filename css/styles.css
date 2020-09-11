@@ -689,6 +689,12 @@ main {
 	width: 100%;
 }
 
+/*--- PLYR ---*/
+
+:root {
+	--plyr-color-main: #333 !important;
+}
+
 
 /*--- WORK ---*/
 
@@ -759,6 +765,7 @@ main {
 .work-grid-iframe {
 	width: 100%;
 	height: 300px;
+	margin-bottom: 10px;
 }
 
 .work-grid-iframe-big {

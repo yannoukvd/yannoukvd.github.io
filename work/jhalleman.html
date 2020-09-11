@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+<!--- Head template --->
+<head>
+  
+  <!--- Meta Data --->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  
+  <!--- Title --->
+  <title>Home | Yannouk</title>
+  
+  <!--- Stylesheets --->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../font/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+  
+</head>
+
+  <body>
+
+    <!--- Header template --->
+      <header>
+  <div class="headWrap">
+        
+        <!--- Logo --->
+    <div class="logo">
+      <a href="/"><span>yannouk.com</span></a>
+    </div>
+        
+        <!--- Main Navigation --->
+    <nav class="mainNav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/work.html">Work</a></li>
+        <li><a href="/photo.html">Photo</a></li>
+        <li><a href="/music.html">Music</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+        
+        <!--- Mobile Nav Button --->
+    <div class="m-mainNav-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+        
+        <!--- Mobile Navigation --->
+    <nav class="m-mainNav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/work.html">Work</a></li>
+        <li><a href="/photo.html">Photo</a></li>
+        <li><a href="/music.html">Music</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+        
+  </div>
+</header>
+
+    <!--- Main --->
+      <main>
+        
+        <!--- Articles --->
+        <section class="cf">
+
+          <div class="intro-text">
+              <p>
+                  Jh Alleman<br><br>
+                  Graphic Design for Online & Offline Communications.<br>
+                  Brussels, Belgium<br>
+                  2015 - 2020
+              </p>
+          </div>
+
+          <div class="work-grid cf">
+            <div class="col">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-1.jpg">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-2.jpg">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-3.jpg">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-4.jpg">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-5.jpg">
+            </div>
+            <div class="col">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-17.jpg">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-7.jpg">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-8.jpg">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-9.jpg">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-10.jpg">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-16.jpg">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-14.jpg">
+            </div>
+            <div class="col">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-6.jpg">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-11.jpg">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-12.jpg">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-13.jpg">
+              <img class="work-grid-image" src="../img/work/jhalleman/jhalleman-15.jpg">
+            </div>
+          </div>
+
+          <div class="fullscreen">
+            <div>
+              <div>
+                <div>
+                  <img src='' alt="Jh Alleman">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-image">
+            <div class="work-grid-iframe">
+                <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="wtMM2gqb9xI"></div>
+              </div>
+          </div>
+          
+        </section>
+        
+      </main>
+      
+  <!--- Footer template --->
+    <footer>
+  <div class="footWrap">
+    
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>&copy; <a href="contact.php">yannouk.com</a>, 2020. All rights reserved.</p>
+    </div>
+    
+  </div>
+</footer>
+
+<!--- Scripts --->
+<script src="../js/jquery-1.10.2.js"></script>
+<script src="../js/main.js"></script>
+<script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+<script src="../js/plyr.js" crossorigin="anonymous"></script>
+<script>
+  const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
+</script>
+      
+  </body>
+
+</html>
