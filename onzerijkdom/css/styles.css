@@ -1,0 +1,936 @@
+/* --------------- */
+/* --- GENERAL --- */
+/* --------------- */
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../font/manrope/manrope.woff2') format('woff2'),
+         url('../font/manrope/manrope.woff') format('woff'),
+         url('../font/manrope/manrope.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family: 'Nexa Bold';
+    src: url('../font/nexa/nexa-bold/NexaDemo-Bold.woff2') format('woff2'),
+         url('../font/nexa/nexa-bold/NexaDemo-Bold.woff') format('woff'),
+         url('../font/nexa/nexa-bold/NexaDemo-Bold.eot') format('eot'),
+         url('../font/nexa/nexa-bold/NexaDemo-Bold.otf') format('otf'),
+         url('../font/nexa/nexa-bold/NexaDemo-Bold.ttf') format('truetype')
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa Light';
+    src: url('../font/nexa/nexa-light/NexaDemo-Light.woff2') format('woff2'),
+         url('../font/nexa/nexa-light/NexaDemo-Light.woff') format('woff'),
+         url('../font/nexa/nexa-light/NexaDemo-Light.eot') format('eot'),
+         url('../font/nexa/nexa-light/NexaDemo-Light.otf') format('otf'),
+         url('../font/nexa/nexa-light/NexaDemo-Light.ttf') format('truetype')
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa Text Bold';
+    src: url('../font/nexa/nexa-text-bold/NexaTextDemo-Bold.woff2') format('woff2'),
+         url('../font/nexa/nexa-text-bold/NexaTextDemo-Bold.woff') format('woff'),
+         url('../font/nexa/nexa-text-bold/NexaTextDemo-Bold.eot') format('eot'),
+         url('../font/nexa/nexa-text-bold/NexaTextDemo-Bold.otf') format('otf'),
+         url('../font/nexa/nexa-text-bold/NexaTextDemo-Bold.ttf') format('truetype')
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa Text Light';
+    src: url('../font/nexa/nexa-text-light/NexaTextDemo-Light.woff2') format('woff2'),
+         url('../font/nexa/nexa-text-light/NexaTextDemo-Light.woff') format('woff'),
+         url('../font/nexa/nexa-text-light/NexaTextDemo-Light.eot') format('eot'),
+         url('../font/nexa/nexa-text-light/NexaTextDemo-Light.otf') format('otf'),
+         url('../font/nexa/nexa-text-light/NexaTextDemo-Light.ttf') format('truetype')
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'Nexa', Arial, sans-serif;
+	background: #F5F2F0;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 10vw;
+	color: #000;
+	margin: 0;
+	font-family: Times, serif;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 5em;
+	color: #000;
+	font-family: Times, serif;
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 1em;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+
+section {
+    display: block;
+}
+
+p, span {
+	font-weight: 700;
+	color: #8D8D8D;
+	margin: 0;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+}
+
+p::selection, span::selection, a::selection, h2::selection, img::selection {
+	background-color: #A8AAA8;
+}
+
+.link {
+	font-size: 1em;
+	text-decoration: underline;
+}
+
+.cf:before,
+.cf:after {
+	content: "";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+/* -------------- */
+/* --- HEADER --- */
+/* -------------- */
+
+/* DESKTOP NAV */
+
+header {
+	padding: 0 5% 0 2%;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	background: #F5F2F0;
+	z-index: 100;
+}
+
+header .logo {
+	display: block;
+	width: 150px;
+	height: 100px;
+	background-image: url(../img/onzerijkdom-logo_black.png);
+	background-size: 120px;
+	background-repeat: no-repeat;
+	float: left;
+	position: absolute;
+	z-index: 105;
+	margin: 10px 0;
+}
+
+header .logo a {
+	display: block;
+	width: 100px;
+	height: 100px;
+}
+
+header nav {
+	float: right;
+	display: inline;
+	padding: 50px 0 50px 20px;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+header nav ul li {
+	display: inline;
+	margin-right: 30px;
+}
+
+header nav ul li:last-child {
+	display: inline;
+	margin: 0;
+}
+
+header nav ul li:last-child a {
+	color: #fff;
+	padding: 10px 20px;
+	background: #000;
+	border-radius: 3px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	text-transform: uppercase;
+}
+
+header nav ul li a {
+	color: #000;
+	font-family: 'manrope', Arial, sans-serif;
+}
+
+header nav ul li a:hover {
+	color: #8D8D8D;
+}
+
+header nav ul li:last-child:hover a {
+	color: #8D8D8D;
+	box-shadow: none;
+}
+
+header .action {
+	display: none;
+}
+
+header .action a {
+	color: #fff;
+	padding: 3px 15px;
+	border: 1px solid #fff;
+}
+
+header .action a:hover {
+	box-shadow: none;
+	color: #A8AAA8;
+	border: 1px solid #3C3C3C;
+}
+
+header .top {
+	font-size: 0.5em;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 20px;
+	bottom: -20px;
+	color: #fff;
+	background: #000;
+	border-radius: 50px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	background-image: url(../img/arrow-up.png);
+  	background-position: 50% 45%;
+  	background-size: 60%;
+  	background-repeat: no-repeat;
+  	display: none;
+}
+
+header .top a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+header .top:hover {
+	transform: scale(1.05);
+	box-shadow: none;
+	cursor: pointer;
+}
+
+
+/* MOBILE NAV */
+
+header .m-nav-btn {
+	display: none;
+	width: 100px;
+	height: 100px;
+	padding: 33px 29px;
+	float: right;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+	z-index: 100;
+	position: relative;
+	box-sizing: border-box;
+}
+
+header .m-nav-btn span {
+  display: block;
+  height: 4px;
+  width: 40px;
+  margin: auto;
+  background: #000;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+}
+
+header .m-nav-btn span:nth-child(1) {
+  margin-top: 0px;
+}
+
+header .m-nav-btn span:nth-child(2),
+header .m-nav-btn span:nth-child(3) {
+  margin-top: 13px;
+}
+
+header .m-nav-btn span:nth-child(4) {
+  margin-top: 26px;
+}
+
+header .m-nav-btn.open span:nth-child(1), header .m-nav-btn.open span:nth-child(4) {
+  	display: none;
+}
+
+header .m-nav-btn.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+header .m-nav-btn.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+header .m-nav {
+  display: none;
+  position: fixed;
+  padding-top: 100px;
+  background: #000;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+header .m-nav ul {
+  padding: 0;
+  width: 100%;
+  margin: auto;
+}
+
+header .m-nav ul li {
+  width: 100%;
+  list-style: none;
+}
+
+header .m-nav ul li a:hover {
+  	text-decoration: underline;
+	color: #A8AAA8;
+}
+
+header .m-nav ul li a, header .m-action {
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+  display: block;
+  opacity: 1;
+}
+
+header .m-action {
+  	color: #fff;
+	padding: 3px 15px;
+	border: 1px solid #fff;
+	width: 150px;
+	margin: 30px auto;
+}
+
+header .m-action:hover {
+	color: #A8AAA8;
+	border: 1px solid #3C3C3C;
+}
+
+
+/* ------------ */
+/* --- MAIN --- */
+/* ------------ */
+
+/* --- HOME --- */
+
+main {
+	margin: 150px 5%;
+}
+
+h1 span {
+	display: block;
+	font-size: 1em;
+	color: #000;
+	margin-left: 5%;
+	font-family: Times, serif;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 0.8em;
+}
+
+.photo {
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+	border-radius: 3px;
+}
+
+.block {
+	position: relative;
+}
+
+/* --- BLOCK 1 --- */
+
+.text-1 {
+	margin-top: 50px;
+}
+
+.text-1 p {
+	width: 30vw;
+	margin: 50px 0 0 10%;
+}
+
+.line {
+	background-color: #CB9B5C;
+}
+
+.line-1 {
+	width: 300px;
+	height: 20px;
+	margin: 70px 0 0 10%;
+}
+
+.photo-1 {
+	background-image: url(../img/photo/BART0618.jpg);
+	width: 43vw;
+	height: 550px;
+	right: 0;
+	top: 0;
+}
+
+
+/* --- BLOCK 2 --- */
+
+.block-2 {
+	margin-top: 100px;
+}
+
+.text-2 p {
+	margin-left: 40vw;
+	width: 50%;
+}
+
+.photo-2 {
+	background-image: url(../img/photo/BART1828.jpg);
+	width: 35vw;
+	height: 35vw;
+	left: 0;
+	top: 50px;
+}
+
+.photo-3 {
+	background-image: url(../img/photo/BART0721.jpg);
+	width: 40vw;
+	height: 40vw;
+	right: 8%;
+	top: 150px;
+}
+
+.line-2 {
+	position: absolute;
+	width: 20px;
+	height: 300px;
+	right: 0;
+	top: 35vw;
+}
+
+/* --- BLOCK 3 --- */
+
+.block-3 {
+	margin-top: 55vw;
+}
+
+.text-3 {
+	width: 70%;
+	margin: auto;
+}
+
+.text-3 p {
+	font-size: 2.5em;
+	color: #000;
+	font-family: "Georgia", serif;
+}
+
+/* --- BLOCK 4 --- */
+
+.block-4 {
+	margin-top: 150px;
+}
+
+.text-4 {
+	width: 30%;
+	padding-top: 50px;
+}
+
+.photo-4 {
+	background-image: url(../img/photo/BART5463.jpg);
+	width: 65vw;
+	height: 30vw;
+	right: -70px;
+	top: 0;
+}
+
+.photo-5 {
+	background-image: url(../img/photo/BART5468.jpg);
+	width: 30vw;
+	height: 30vw;
+	left: 50px;
+	margin-top: 100px;
+}
+
+.line-3 {
+	position: absolute;
+	width: 20px;
+	height: 300px;
+	left: 0;
+	bottom: 0;
+}
+
+.text-5 {
+	width: 55%;
+	margin-top: 22vw;
+	margin-left: 40vw;
+}
+
+/* --- CONCERTS --- */
+
+.concerts {
+	margin-top: 15vw;
+}
+
+.concerts-container {
+	overflow: auto;
+  	white-space: nowrap;
+  	position: relative;
+  	height: 400px;
+}
+
+.concerts-container > div {
+	width: 400px;
+	padding: 30px;
+	display: inline-block;
+	position: relative;
+	border-radius: 3px;
+	background-size: cover;
+}
+
+.concerts-container > div:nth-child(2n) {
+	top: 50px;
+}
+
+.concerts-container > div:nth-child(2n-1) {
+	top: 0;
+}
+
+.concerts-container > div:nth-child(1) {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/photo/BART0618.jpg);
+}
+
+.concerts-container > div:nth-child(2) {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/photo/BART0618.jpg);
+}
+
+.concerts-container > div:nth-child(3) {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/photo/BART0618.jpg);
+}
+
+
+.concerts-container > div:nth-child(4) {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/photo/BART0618.jpg);
+}
+
+.concerts-container > div:nth-child(5) {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/photo/BART0618.jpg);
+}
+
+.concerts-container > div:nth-child(6) {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/photo/BART0618.jpg);
+}
+
+.concerts-container > div span {
+	display: block;
+}
+
+.concerts-date {
+	font-size: 3em;
+	color: #fff;
+	font-family: Times, serif;
+}
+
+.concerts-location {
+	font-size: 1em;
+	color: #fff;
+	font-family: Times, serif;
+}
+
+.concerts-action {
+	text-transform: uppercase;
+	background-color: #CB9B5C;
+	padding: 20px 30px;
+	margin: 100px 0 0 150px;
+	text-align: center;
+	display: block;
+	border-radius: 3px;
+}
+
+/* --- SONGS --- */
+
+.songs {
+	margin-top: 100px;
+}
+
+.songs > div > div {
+	float: left;
+}
+
+.songs img {
+	height: 20vw;
+	width: 20vw;
+	border-radius: 3px;
+}
+
+.songs > div > div > div {
+	background-color: #000;
+	padding: 20px 30px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+
+.songs iframe {
+	float: left;
+	margin: 0 0 0 20px;
+	width: 67.7vw;
+	height: 400px;
+}
+
+.songs ol {
+	float: left;
+	margin: 0 0 0 20px;
+	width: 50vw;
+}
+
+.songs ol li {
+	padding: 0.49vw;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.songs ol li:last-child {
+	border-bottom: none;
+}
+
+.cd2 {
+	margin-top: 100px;
+}
+
+
+
+/* --- CONTACT --- */
+
+.contact {
+	padding: 70px 0 110px;
+}
+
+.contact div {
+	width: 40%;
+	float: left;
+}
+
+.contact-form form {
+	width: 100%;
+}
+
+.contact-form fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.contact-form label {
+	display: none;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+	background: #fff;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	border: none;
+	font-size: 1em;
+	margin: 5px 0;
+	padding: 15px 10px 10px;
+	border-radius: 3px;
+	font-weight: 400;
+	color: #000;
+	width: 100%;
+	font-family: 'Nexa', Arial, sans-serif;
+	font-weight: bold;
+}
+
+.contact-form select {
+	height: 40px;
+	width: 100%;
+}
+
+.contact-form .input {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.contact-form .name input {
+	margin: 5px 0;
+}
+
+.contact-form .email {
+	clear: both;
+}
+
+.contact-form .email {
+	clear: both;
+}
+
+.contact-form .textarea {
+	height: 150px;
+}
+
+.contact-form .submit {
+	width: 100px;
+	display: block;
+	border-radius: 3px;
+
+}
+
+.contact-form .submit:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+#contact > .contact {
+	padding: 30px 50px;
+	margin-top: 50px;
+}
+
+.contact .contact-name {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.contact .contact-info {
+	margin-top: 20px;
+	width: 60%;
+	float: left;
+	padding: 0 0 0 50px;
+	color: #000;
+	box-sizing: border-box;
+}
+
+.contact .contact-info span {
+	display: block;
+	color: #000;
+}
+
+/* --- FOOTER --- */
+
+footer {
+	background: #000;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	height: 60px;
+}
+
+footer span {
+	display: block;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+
+/** MOBILE **/
+
+
+/* MAX 900PX */
+
+@media screen and (max-width: 900px) {
+
+	/* GENERAL */
+
+  	h1 {
+  		font-size: 5em;
+  		margin: 0;
+  	}
+
+  	h1 span {
+  		display: inline;
+  		margin: 0;
+  	}
+  	.mainnav {
+    	height: 75px;
+  	}
+
+  	header nav {
+    	display: none;
+  	}
+
+  	header .m-nav-btn {
+    	display: block;
+    	cursor: pointer;
+  	}
+
+  	/* BLOCK 1 */
+
+	.text-1 {
+		margin-top: 0;
+	}
+
+	.text-1 p {
+		width: 100%;
+		margin: 30px 0 0 0;
+	}
+
+	.line-1 {
+		width: 300px;
+		margin: 50px 0 0 0;
+	}
+
+  	.photo {
+		position: static;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.photo-1 {
+		background-image: url(../img/photo/BART0618.jpg);
+		width: 100%;
+		height: 100vw;
+		margin-top: 70px;
+	}
+
+	/* BLOCK 2 */
+
+	.block-2 {
+		margin-top: 70px;
+	}
+
+	.text-2 p {
+		margin-top: 70px;
+		margin-bottom: 70px;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.photo-2 {
+		width: 100%;
+		height: 600px;
+		left: 0;
+		top: 50px;
+	}
+
+	.photo-3 {
+		width: 100%;
+		height: 400px;
+		right: 8%;
+		top: 150px;
+	}
+
+	.line-2 {
+		display: none;
+	}
+
+	/* BLOCK 3 */
+
+	.block-3 {
+		margin-top: 70px;
+	}
+
+	.text-3 {
+		width: 70%;
+		margin: auto;
+	}
+
+	.text-3 p {
+		font-size: 2.5em;
+		color: #000;
+		font-family: "Georgia", serif;
+	}
+
+	/* BLOCK 4 */
+
+	.block-4 {
+		margin-top: 70px;
+	}
+
+	.text-4 {
+		width: 100%;
+		padding-top: 0;
+	}
+
+	.photo-4 {
+		width: 100%;
+		height: 300px;
+		right: 0;
+		margin-top: 70px;
+	}
+
+	.photo-5 {
+		width: 100%;
+		height: 500px;
+		left: 0;
+		margin-top: 70px;
+	}
+
+	.line-3 {
+		display: none;
+	}
+
+	.text-5 {
+		width: 100%;
+		margin-top: 70px;
+		margin-left: 0;
+	}
+
+
+}
