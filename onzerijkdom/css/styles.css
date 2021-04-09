@@ -196,8 +196,9 @@ header nav ul li a {
 	font-family: 'manrope', Arial, sans-serif;
 }
 
-header nav ul li a:hover {
+header nav ul a:hover {
 	color: #8D8D8D;
+	transform: scale(1.05);
 }
 
 header nav ul li:last-child:hover a {
@@ -401,6 +402,7 @@ h1 span {
 .photo {
 	position: absolute;
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 3px;
 }
@@ -459,9 +461,11 @@ h1 span {
 }
 
 .photo-3 {
-	background-image: url(../img/photo/BART0721.jpg);
+	/*background-image: url(../img/photo/BART0721.jpg);
+	background-size: contain;*/
+	border-radius: 5px;
 	width: 40vw;
-	height: 40vw;
+	/*height: 40vw;*/
 	right: 8%;
 	top: 150px;
 }
@@ -477,7 +481,7 @@ h1 span {
 /* --- BLOCK 3 --- */
 
 .block-3 {
-	margin-top: 55vw;
+	margin-top: 43vw;
 }
 
 .text-3 {
@@ -623,23 +627,31 @@ h1 span {
 	margin-top: 100px;
 }
 
-.songs > div > div {
-	float: left;
+.songs > div {
+	display: inline-flex;
 }
 
 .songs img {
-	height: 20vw;
-	width: 20vw;
+	height: 270px;
+	width: 300px;
 	border-radius: 3px;
 }
 
-.songs > div > div > div {
+.songs > div > div > div > a {
+	display: block;
 	background-color: #000;
 	padding: 20px 30px;
 	text-align: center;
 	color: #fff;
 	text-transform: uppercase;
 	border-radius: 3px;
+	margin-bottom: 5px;
+}
+
+.songs > div > div > div > a:hover {
+	transform: scale(1.01);
+	cursor: pointer;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 .songs iframe {
@@ -664,8 +676,8 @@ h1 span {
 	border-bottom: none;
 }
 
-.cd2 {
-	margin-top: 100px;
+.songs .cd1 {
+	margin-right: 50px;
 }
 
 
@@ -677,7 +689,7 @@ h1 span {
 }
 
 .contact div {
-	width: 40%;
+	width: 70%;
 	float: left;
 }
 
@@ -713,6 +725,10 @@ h1 span {
 	font-weight: bold;
 }
 
+.contact-form .form-invalid {
+	outline: 2px solid red;
+}
+
 .contact-form select {
 	height: 40px;
 	width: 100%;
@@ -733,6 +749,10 @@ h1 span {
 
 .contact-form .email {
 	clear: both;
+}
+
+.contact-form .address {
+	display: none;
 }
 
 .contact-form .textarea {
@@ -763,9 +783,8 @@ h1 span {
 
 .contact .contact-info {
 	margin-top: 20px;
-	width: 60%;
+	width: 30%;
 	float: left;
-	padding: 0 0 0 50px;
 	color: #000;
 	box-sizing: border-box;
 }
@@ -773,6 +792,133 @@ h1 span {
 .contact .contact-info span {
 	display: block;
 	color: #000;
+}
+
+/*--- GALLERY ---*/
+
+.work-image img {
+	width: 100%;
+}
+
+.work-grid {
+}
+
+.work-grid .col {
+	float: left;
+}
+
+.work-grid .col:nth-child(1) {
+	margin-left: 0;
+	width: 32.66%;
+}
+
+.work-grid .col-min:nth-child(1) {
+	width: 100%;
+}
+
+.work-grid .col:nth-child(2) {
+	margin: 0 1%;
+	width: 32.66%;
+}
+
+.work-grid .col:nth-child(3) {
+	margin-right: 0;
+	width: 32.66%;
+}
+
+.work-grid .work-grid-image {
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+.work-grid .work-grid-image {
+	width: 100%;
+}
+
+.work-grid .work-grid-image {
+	margin-bottom: 3%;
+}
+
+.work-grid .work-grid-image:hover {
+	background-size: 170%;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.work-grid .col-50 {
+	float: left;
+}
+
+.work-grid .col-50:nth-child(1) {
+	width: 49.5%;
+}
+
+.work-grid .col-50:nth-child(2) {
+	margin-left: 1%;
+	width: 49.5%;
+}
+
+.work-grid-iframe {
+	width: 100%;
+	height: 300px;
+	margin-bottom: 10px;
+}
+
+.work-grid-iframe-big {
+	width: 100%;
+	height: 500px;
+}
+
+.work-grid-iframe-banner {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*--- FULLSCREEN ---*/
+
+.fullscreen {
+	background: #000;
+	background: rgba(0, 0, 0, 0.7);
+	bottom: 0;
+	display: none;
+	height: 100%;
+	left: 0;
+	overflow: scroll;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 200;
+}
+
+.fullscreen > div {
+	display: table;
+	padding-top: 50px;
+	position: absolute;
+	width: 100%;
+}
+
+.fullscreen > div > div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.fullscreen > div > div > div {
+	margin: auto;
+	width: 70%;
+	height: 500px;
+}
+
+.fullscreen > div > div > div iframe {
+	height: 39.4vw;
+	width: 70vw;
+}
+
+.fullscreen > div > div > div img {
+	width: 100%;
 }
 
 /* --- FOOTER --- */
@@ -794,6 +940,23 @@ footer span {
 
 
 /** MOBILE **/
+
+@media screen and (max-height: 750px) {
+
+	h1 {
+  		font-size: 5em;
+  		margin: 0;
+  	}
+
+  	.photo-1 {
+		background-image: url(../img/photo/BART0618.jpg);
+		width: 43vw;
+		height: 450px;
+		right: 0;
+		top: 0;
+	}
+
+}
 
 
 /* MAX 900PX */
@@ -842,7 +1005,7 @@ footer span {
 
   	.photo {
 		position: static;
-		background-size: cover;
+		background-size: contain;
 		background-position: center;
 	}
 
@@ -936,5 +1099,44 @@ footer span {
 		margin-left: 0;
 	}
 
+	.concerts-container {
+		white-space: normal;
+		height: 100%;
+	}
+
+	.concerts-container > div {
+		box-sizing: border-box;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	.concerts-action {
+		margin: 100px 0 0 0;
+	}
+
+	.concerts-container > div:nth-child(2n) {
+	    top: 0;
+	}
+
+	.songs img {
+		height: 100vw;
+		width: 100%;
+		border-radius: 3px;
+	}
+
+	.songs .cd1 {
+		margin-right: 0;
+		margin-bottom: 50px;
+	}
+
+	.contact div {
+		width: 100%;
+		float: none;
+	}
+
+	.contact .contact-info {
+		width: 100%;
+		margin-bottom: 50px;
+	}
 
 }

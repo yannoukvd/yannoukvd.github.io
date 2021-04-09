@@ -46,58 +46,73 @@ $(document).ready(function () {
     $(".m-nav-btn").removeClass('open');
   });
 
- /* SLIDER */
+/* CONTACT */
 
-// console.log("test");
-
-var timer = null;
-function startInterval(){
-  timer = setInterval(slider, 6000);
-}
-startInterval();
-
-function slider(){
-  console.log($(".slider-container .slider").css("left"));
-  if($(".slider-container .slider").css("left") === "-1560px"){
-    $(".slider-container .slider").animate({
-      "left":"0"
-    }, 1000);
-  } else {
-    $(".slider-container .slider").animate({
-      "left":"-=100%"
-    }, 1000);
-  }
-}
-
-$(".arrow-next").click(function(){
-  console.log("next");
-  console.log($(".slider-container .slider").css("left"));
-  clearInterval(timer);
-  if($(".slider-container .slider").css("left") === "-1560px"){
-    $(".slider-container .slider").animate({
-      "left":"0"
-    }, 1000);
-  } else {
-    $(".slider-container .slider").animate({
-      "left":"-=100%"
-    }, 1000);
-  }
+$("#bestel-cd1").click(function () {
+  console.log("test");
+  $("#subject").val('CD bestellen');
+  $(".address").show();
 });
 
-$(".arrow-prev").click(function(){
-  console.log("prev");
-  console.log($(".slider-container .slider").css("left"));
-  clearInterval(timer);
-  if($(".slider-container .slider").css("left") === "0px"){
-    $(".slider-container .slider").animate({
-      "left":"-1560px"
-    }, 1000);
-  } else {
-    $(".slider-container .slider").animate({
-      "left":"+=100%"
-    }, 1000);
-  }
+$("#subject").on('change', function() {
+  console.log("subject");
+  if ($('#subject').val() == "CD bestellen") {
+  $(".address").show();
+  console.log("selected");
+} else {
+  $(".address").hide();
+}
 });
+
+$(".work-grid-image").each(function () {
+    $(this).click(function () {
+      console.log("test");
+      //var src = $(this).attr("background-image").replace(/^url|[\(\'\")]/g, ''),
+        //alt = src.split("/").pop();
+      var src = $(this).attr("src");
+      $(this).parent().parent().next().fadeIn(200);
+      $(this).parent().parent().next().children().children().children().children().attr("src", src);
+      //$(this).parent().next().children().children().children().children().attr("alt", alt);
+    });
+  });
+
+  $(".work-image").each(function () {
+    $(this).click(function () {
+      console.log("test");
+      //var src = $(this).attr("background-image").replace(/^url|[\(\'\")]/g, ''),
+        //alt = src.split("/").pop();
+      var src = $(this).attr("src");
+      $(this).parent().next().next().fadeIn(200);
+      $(this).parent().parent().next().children().children().children().children().attr("src", src);
+      //$(this).parent().next().children().children().children().children().attr("alt", alt);
+    });
+  });
+
+
+  /* Fullscreen View Photo */
+  $(".fullscreen").hide();
+
+
+  /* Fullscreen View Video */
+
+  $(".post-cover").click(function () {
+    $(this).next().fadeIn(200).fadeIn(200);
+    var src = $(this).next().children().children().children().children().attr("src");
+    src += "?autoplay=1";
+    $(this).next().children().children().children().children().attr("src", src);
+  });
+
+  $(".fullscreen").click(function () {
+    var src1 = $(this).children().children().children().children().attr("src"),
+      src2 = src1.substring(0, src1.indexOf('?'));
+    $(this).children().children().children().children().attr("src", src2);
+    $(".fullscreen").fadeOut(200);
+  });
+
+  $(".fullscreen").click(function () {
+    $(".fullscreen").fadeOut(200);
+  });
+
 
 
       
