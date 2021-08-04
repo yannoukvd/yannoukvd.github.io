@@ -1,0 +1,91 @@
+/*** body ***/
+
+body {
+	background: #000;
+	margin: 0;
+}
+
+
+/*** header ***/
+
+header {
+	display: none;
+}
+
+
+/*** main ***/
+
+main {
+	background-image: url(../img/ambrio_logo_white.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20%;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+main .logo-ring-1 {
+	position: absolute;
+	background-image: url(../img/ambrio_ring_logo_white.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 30%;
+	width: 100vw;
+	height: 100vh;
+	-webkit-animation:spin 200s linear infinite;
+    -moz-animation:spin 200s linear infinite;
+    animation:spin 200s linear infinite;
+}
+
+main .logo-ring-2 {
+	position: absolute;
+	background-image: url(../img/ambrio_ring_logo_white.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 35%;
+	width: 100vw;
+	height: 100vh;
+	transform: rotate(20deg);
+	-webkit-animation:spin 350s linear infinite;
+    -moz-animation:spin 350s linear infinite;
+    animation:spin 350s linear infinite;
+}
+
+main .logo-ring-3 {
+	position: absolute;
+	background-image: url(../img/ambrio_ring_logo_white.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 40%;
+	width: 100vw;
+	height: 100vh;
+	transform: rotate(-30deg);
+	-webkit-animation:spin 500s linear infinite;
+    -moz-animation:spin 500s linear infinite;
+    animation:spin 500s linear infinite;
+}
+
+@-moz-keyframes spin {
+	100% {
+  		-moz-transform: rotate(360deg); 
+  	} 
+}
+@-webkit-keyframes spin {
+	100% {
+  		-webkit-transform: rotate(360deg); 
+  	} 
+}
+@keyframes spin {
+	100% {
+  		-webkit-transform: rotate(360deg); 
+  		transform:rotate(360deg); 
+  	} 
+}
+
+
+/*** footer ***/
+
+footer {
+	display: none;
+}
